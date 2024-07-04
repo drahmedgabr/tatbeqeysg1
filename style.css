@@ -1,0 +1,80 @@
+html {
+    --main-color: #333333;
+    --secondary-color: #fa694e;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans";
+    margin: 0;
+}
+
+.container {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* Start Header */
+
+.header {
+    background-color: black;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .container img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.header .container .iconDiv {
+    width: 40px;
+    direction: rtl;
+}
+
+.header .container .iconDiv .iconLine {
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+.header .container .iconDiv #centerLine {
+    width: 50%;
+}
+
+.header .container .iconDiv:hover #centerLine {
+    width: 100%;
+    transition: 0.3s;
+}
+
+/* End Header */
