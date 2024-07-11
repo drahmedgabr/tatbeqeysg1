@@ -181,6 +181,14 @@ body {
     background-color: #a43521;
 }
 
+@media (max-width: 767px) {
+    .landing .container .centerDiv h1 {
+        font-size: 60px;
+    }
 
+    .landing .container .centerDiv p {
+        font-size: 25px;
+    }
+}
 
 /* End Landing */
