@@ -192,3 +192,35 @@ body {
 }
 
 /* End Landing */
+
+/* Start Services */
+
+.services .container {
+    display: flex;
+    padding: 100px 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.services .container .service {
+    width: 300px;
+    text-align: center;
+    margin: 10px;
+}
+
+.services .container .service i {
+    color: var(--secondary-color);
+    font-size: 60px;
+}
+
+.services .container .service h2 {
+    font-size: 35px;
+    color: var(--main-color);
+}
+
+.services .container .service p {
+    font-size: 25px;
+    color: #777;
+}
+
+/* End Services */
