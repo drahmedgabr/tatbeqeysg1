@@ -224,3 +224,45 @@ body {
 }
 
 /* End Services */
+
+/* Start Stories */
+
+.stories {
+    background-color: #f2f2f2;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.stories .container h2 {
+    font-size: 60px;
+    font-weight: 900;
+    color: #C5C5C5;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.stories .container p {
+    font-size: 30px;
+}
+
+.stories .container .contents {
+    display: flex;
+}
+
+.stories .container .contents .cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stories .container .contents .cards .card {
+    width: 230px;
+    box-shadow: 0 0 20px grey;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.stories .container .contents .imgDiv img {
+    width: 300px;
+}
+
+/* End Stories */
