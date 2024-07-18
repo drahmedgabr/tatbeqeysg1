@@ -5,6 +5,7 @@ html {
 
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
@@ -127,7 +128,6 @@ body {
 /* Start Landing */
 
 .landing {
-    width: 100vw;
     height: 100vh;
     background-image: url(images/coding.jpg);
     background-size: cover;
@@ -241,8 +241,9 @@ body {
     margin: 0;
 }
 
-.stories .container p {
+.stories .container #containerParagraph {
     font-size: 30px;
+    margin: 40px 0;
 }
 
 .stories .container .contents {
@@ -252,17 +253,73 @@ body {
 .stories .container .contents .cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .stories .container .contents .cards .card {
     width: 230px;
     box-shadow: 0 0 20px grey;
-    margin: 10px;
-    border-radius: 5px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+
+.stories .container .contents .cards .card .cardImg {
+    background-color: #cfcfcf;
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+
+}
+
+.stories .container .contents .cards .card .cardImg img {
+    width: 70%;
+}
+
+.stories .container .contents .cards .card .cardDetails  {
+    padding: 10px;
+}
+
+.stories .container .contents .cards .card .cardDetails h3 {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.stories .container .contents .cards .card .cardDetails p {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .stories .container .contents .imgDiv img {
     width: 300px;
+    position: relative;
+}
+
+.stories .container .contents .imgDiv {
+    position: relative;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.stories .container .contents .imgDiv::before {
+    content: "";
+    width: 120px;
+    height: 80%;
+    background-color: #cfcfcf;
+    position: absolute;
+    right: 0px;
+}
+
+@media (min-width: 1200px) {
+    .stories .container .contents .imgDiv {
+        display: flex;
+    }
+}
+
+@media (max-width: 579px) {
+    .stories .container .contents .cards .card {
+        width: 300px;
+    }
 }
 
 /* End Stories */
