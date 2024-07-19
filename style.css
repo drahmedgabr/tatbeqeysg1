@@ -408,7 +408,57 @@ body {
         margin-left: 0;
         margin-top: 50px;
     }
+
+    .contact .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 
 /* End Contact */
+
+/* Start Footer */
+
+.footer {
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .container .iconsDiv {
+    display: flex;
+}
+
+.footer .container .iconsDiv .icon {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    color: var(--main-color);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+@media (max-width: 750px) {
+    .footer .container {
+        flex-direction: column;
+    }
+
+    .footer .container p {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+/* End Footer */
