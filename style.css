@@ -323,3 +323,92 @@ body {
 }
 
 /* End Stories */
+
+/* Start Contact */
+
+.contact .container {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contact .container h1 {
+    font-size: 60px;
+    font-weight: 900;
+    color: #C5C5C5;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+
+.contact .container .contents {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.contact .container .contents .details h3 {
+    font-size: 25px;
+    color: var(--main-color);
+}
+
+.contact .container .contents .details p {
+    font-size: 20px;
+    margin: 20px 0;
+    color: #777;
+}
+
+.contact .container .contents .form input, textarea {
+    padding: 20px 30px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f1f5f8;
+    font-size: 25px;
+    outline-color: var(--secondary-color);
+}
+
+.contact .container .contents .form .firstRow {
+    display: flex;
+}
+
+.contact .container .contents .form .firstRow input:nth-child(2) {
+    margin-left: 10px;
+}
+
+.contact .container .contents .form textarea {
+    resize: none;
+}
+
+.contact .container .contents .form button {
+    width: 100%;
+    padding: 20px 30px;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+}
+
+.contact .container .contents .form button:hover {
+    cursor: pointer;
+    background-color: #a43521;
+}
+
+.contact .container .contents .form {
+    margin-left: 50px;
+}
+
+@media (max-width: 800px) {
+    .contact .container .contents {
+        flex-direction: column;
+    }
+
+    .contact .container .contents .form {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+}
+
+
+/* End Contact */
