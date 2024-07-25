@@ -1,11 +1,14 @@
 html {
     --main-color: #333333;
     --secondary-color: #fa694e;
+    scroll-behavior: smooth;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
+    text-decoration: none;
+    color: var(--main-color);
 }
 
 body {
@@ -86,6 +89,7 @@ body {
 }
 
 .header .container .menuDiv ul {
+    width: 200px;
     background-color: white;
     padding: 10px;
     border-radius: 20px;
@@ -97,6 +101,11 @@ body {
     top: 30px;
     border: 2px solid var(--main-color);
     display: none   ;
+}
+
+.header .container .menuDiv ul a {
+    text-decoration: none;
+    color: var(--main-color);
 }
 
 .header .container .menuDiv ul::before {
@@ -113,6 +122,11 @@ body {
 .header .container .menuDiv ul li {
     padding: 10px 40px;
     text-align: center;
+    transition: 0.3s;
+}
+
+.header .container .menuDiv ul li:hover {
+    padding-left: 50px;
 }
 
 .header .container .menuDiv ul .divider {
@@ -277,11 +291,15 @@ body {
 
 .stories .container .contents .cards .card .cardDetails  {
     padding: 10px;
+    min-height: 120px;
 }
 
 .stories .container .contents .cards .card .cardDetails h3 {
     font-size: 25px;
     margin: 10px 0;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .stories .container .contents .cards .card .cardDetails p {
@@ -431,6 +449,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.footer .container p {
+    color: white;
 }
 
 .footer .container .iconsDiv {
